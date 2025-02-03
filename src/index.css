@@ -1,0 +1,142 @@
+:root[data-theme="light"] {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #1a1a1a;
+}
+
+:root[data-theme="dark"] a {
+  color: #82b1ff;
+}
+
+:root[data-theme="dark"] a:hover {
+  color: #b6d4ff;
+}
+
+:root[data-theme="dark"] .header button {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+:root[data-theme="dark"] .header button:hover {
+  background-color: #2c2c2c;
+}
+
+:root[data-theme="dark"] .header button.active {
+  color: #82b1ff;
+}
+
+:root[data-theme="dark"] .project-card {
+  border-color: #333;
+  background-color: #242424;
+}
+
+:root[data-theme="dark"] .home-text h1 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+:root[data-theme="dark"] .home-text p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+:root[data-theme="dark"] footer {
+  color: rgba(255, 255, 255, 0.7);
+  border-color: #333;
+}
+
+:root[data-theme="dark"] .contact-form input,
+:root[data-theme="dark"] .contact-form textarea {
+  background-color: #242424;
+  border-color: #333;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+:root[data-theme="dark"] .contact-form button {
+  background-color: #1976d2;
+  color: white;
+}
+
+:root[data-theme="dark"] .contact-form button:hover {
+  background-color: #1565c0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.theme-toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(100, 108, 255, 0.1);
+}
+
+:root[data-theme="light"] button {
+  background-color: #f9f9f9;
+  color: #213547;
+}
+
+:root[data-theme="dark"] button {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+}
