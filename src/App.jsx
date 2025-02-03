@@ -36,12 +36,6 @@ function AppContent() {
                 <h1>Welcome to My Portfolio</h1>
                 <p>Hi, I'm a web developer passionate about creating amazing digital experiences.</p>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcSet="/src/assets/me-400x455.png" />
-                <source media="(min-width: 768px)" srcSet="/src/assets/me-300x341.png" />
-                <source media="(min-width: 480px)" srcSet="/src/assets/me-250x284.png" />
-                <img src="/src/assets/me-200x228.png" alt="Profile" className="profile-image" />              
-              </picture>
             </div>
           </section>
         )}
