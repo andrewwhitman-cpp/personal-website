@@ -32,16 +32,18 @@ function AppContent() {
         {activeSection === 'home' && (
           <section className="home-section">
             <div className="home-content">
+              <div className="profile-image">
+                <picture>
+                  <source media="(min-width: 1200px)" srcSet="/personal-website/src/assets/me-400x455.png" />
+                  <source media="(min-width: 800px)" srcSet="/personal-website/src/assets/me-300x341.png" />
+                  <source media="(min-width: 500px)" srcSet="/personal-website/src/assets/me-250x284.png" />
+                  <img src="/personal-website/src/assets/me-200x228.png" alt="Andrew Whitman" />
+                </picture>
+              </div>
               <div className="home-text">
                 <h1>Welcome to My Portfolio</h1>
-                <p>Hi, I'm a web developer passionate about creating amazing digital experiences.</p>
+                <p>Hi, I'm a software engineer passionate about creating amazing digital experiences.</p>
               </div>
-              <picture>
-                <source media="(min-width: 1024px)" srcSet="/src/assets/me-400x455.png" />
-                <source media="(min-width: 768px)" srcSet="/src/assets/me-300x341.png" />
-                <source media="(min-width: 480px)" srcSet="/src/assets/me-250x284.png" />
-                <img src="/src/assets/me-200x228.png" alt="Profile" className="profile-image" />              
-              </picture>
             </div>
           </section>
         )}
@@ -58,12 +60,18 @@ function AppContent() {
             <h2>My Projects</h2>
             <div className="projects-grid">
               <div className="project-card">
-                <h3>Project 1</h3>
-                <p>Description of project 1</p>
+                <h3>Bible Customizer</h3>
+                <p>An interactive web application that allows users to customize a 3D model of a Bible.</p>
+                <a href="https://andrewwhitman-cpp.github.io/bible-customization-app/" target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
               <div className="project-card">
-                <h3>Project 2</h3>
-                <p>Description of project 2</p>
+                <h3>Coffee Creator</h3>
+                <p>A modern, responsive website showcasing coffee order customization.</p>
+                <a href="https://andrewwhitman-cpp.github.io/coffee/" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+              <div className="project-card">
+                <h3>More Coming Soon</h3>
+                <p>Stay tuned for additional projects showcasing my development skills and creativity.</p>
               </div>
             </div>
           </section>
