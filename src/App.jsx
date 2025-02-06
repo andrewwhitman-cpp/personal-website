@@ -41,8 +41,8 @@ function AppContent() {
                 </picture>
               </div>
               <div className="home-text">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Hi, I'm a software engineer passionate about creating amazing digital experiences.</p>
+                <h1>Hi, I'm Andrew</h1>
+                <p>I'm a software engineer passionate about creating amazing digital experiences.</p>
               </div>
             </div>
           </section>
