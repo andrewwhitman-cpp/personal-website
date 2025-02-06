@@ -51,7 +51,7 @@ function AppContent() {
         {activeSection === 'about' && (
           <section className="about-section">
             <h2>About Me</h2>
-            <p>I'm a skilled developer with experience in React, JavaScript, and modern web technologies.</p>
+            <p>I'm a skilled developer with experience in C++, DevOps, React, JavaScript, and modern AI technologies.</p>
           </section>
         )}
 
