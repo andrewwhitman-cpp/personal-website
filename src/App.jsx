@@ -34,9 +34,9 @@ function AppContent() {
             <div className="home-content">
               <div className="profile-image">
                 <picture>
-                  <source media="(min-width: 1200px)" srcSet="/personal-website/src/assets/me-400x455.png" />
-                  <source media="(min-width: 800px)" srcSet="/personal-website/src/assets/me-300x341.png" />
-                  <source media="(min-width: 500px)" srcSet="/personal-website/src/assets/me-250x284.png" />
+                  <source media="(min-width: 1200px)" srcSet="me-400x455.png" />
+                  <source media="(min-width: 800px)" srcSet="me-300x341.png" />
+                  <source media="(min-width: 500px)" srcSet="me-250x284.png" />
                   <img src="/personal-website/src/assets/me-200x228.png" alt="Andrew Whitman" />
                 </picture>
               </div>
