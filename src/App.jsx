@@ -3,10 +3,15 @@ import './App.css'
 import { ThemeProvider, useTheme } from './ThemeContext'
 
 function ThemeToggle() {
-  const { isDark, toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useTheme()
+  const themeEmoji = {
+    light: '🌙',
+    dark: '🌿',
+    emerald: '☀️'
+  }
   return (
     <button onClick={toggleTheme} className="theme-toggle">
-      {isDark ? '☀️' : '🌙'}
+      {themeEmoji[theme]}
     </button>
   )
 }
