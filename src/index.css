@@ -12,13 +12,6 @@
   --particle-line-color: rgba(96, 165, 250, 0.7);
 }
 
-:root[data-theme="emerald"] {
-  color: rgba(255, 255, 255, 0.95);
-  background-color: #004d40;
-  --particle-color: #fbbf24;
-  --particle-line-color: rgba(251, 191, 36, 0.7);
-}
-
 :root[data-theme="dark"] a {
   color: #82b1ff;
 }
@@ -71,83 +64,6 @@
 
 :root[data-theme="dark"] .contact-form button:hover {
   background-color: #1565c0;
-}
-
-:root[data-theme="emerald"] {
-  color: rgba(255, 255, 255, 0.95);
-  background-color: #004d40;
-  --particle-color: #4db6ac;
-  --particle-line-color: rgba(77, 182, 172, 0.4);
-}
-
-:root[data-theme="emerald"] a {
-  color: #4db6ac;
-}
-
-:root[data-theme="emerald"] a:hover {
-  color: #80cbc4;
-}
-
-:root[data-theme="emerald"] .header button {
-  color: rgba(255, 255, 255, 0.95);
-}
-
-:root[data-theme="emerald"] .header button:hover {
-  background-color: #00695c;
-}
-
-:root[data-theme="emerald"] .header button.active {
-  color: #4db6ac;
-}
-
-:root[data-theme="emerald"] .project-card {
-  border-color: #00695c;
-  background-color: #00574b;
-}
-
-:root[data-theme="emerald"] .home-text h1 {
-  color: rgba(255, 255, 255, 0.95);
-}
-
-:root[data-theme="emerald"] .home-text p {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-:root[data-theme="emerald"] footer {
-  color: rgba(255, 255, 255, 0.7);
-  border-color: #00695c;
-}
-
-:root[data-theme="emerald"] .contact-form input,
-:root[data-theme="emerald"] .contact-form textarea {
-  background-color: #00574b;
-  border-color: #00695c;
-  color: #ffffff;
-}
-
-:root[data-theme="emerald"] .contact-form input::placeholder,
-:root[data-theme="emerald"] .contact-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-:root[data-theme="emerald"] .contact-form button {
-  background-color: #4db6ac;
-  color: #000000;
-  font-weight: 600;
-}
-
-:root[data-theme="emerald"] .contact-form button:hover {
-  background-color: #80cbc4;
-}
-
-:root[data-theme="emerald"] .contact-form button:hover {
-  background-color: #2bbbad;
-}
-
-:root[data-theme="emerald"] .theme-toggle {
-  background-color: #004d40;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 }
 
 :root {

@@ -15,11 +15,7 @@ export function ThemeProvider({ children }) {
   }, [theme])
 
   const toggleTheme = () => {
-    setTheme(current => {
-      if (current === 'light') return 'dark'
-      if (current === 'dark') return 'emerald'
-      return 'light'
-    })
+    setTheme(current => current === 'light' ? 'dark' : 'light')
   }
 
   return (

@@ -7,8 +7,7 @@ function ThemeToggle() {
   const { theme, toggleTheme } = useTheme()
   const themeEmoji = {
     light: '🌙',
-    dark: '🌿',
-    emerald: '☀️'
+    dark: '☀️'
   }
   return (
     <button onClick={toggleTheme} className="theme-toggle">
@@ -157,6 +156,50 @@ function AppContent() {
           <section className="about-section">
             <h2>About Me</h2>
             <p>I'm a skilled developer with experience in C++, Python, JavaScript, React, DevOps, and modern AI technologies.</p>
+            <div className="skills-container">
+              <h3>Technical Skills</h3>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-label">C++</span>
+                  <div className="skill-bar"><div className="skill-progress" style={{width: '90%'}}></div></div>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-label">Python</span>
+                  <div className="skill-bar"><div className="skill-progress" style={{width: '90%'}}></div></div>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-label">JavaScript/React</span>
+                  <div className="skill-bar"><div className="skill-progress" style={{width: '80%'}}></div></div>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-label">DevOps</span>
+                  <div className="skill-bar"><div className="skill-progress" style={{width: '65%'}}></div></div>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-label">AI Technologies</span>
+                  <div className="skill-bar"><div className="skill-progress" style={{width: '98%'}}></div></div>
+                </div>
+              </div>
+            </div>
+            {/* <div className="timeline-container">
+              <h3>Professional Journey</h3>
+              <div className="timeline">
+                <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                    <h4>2024 - Present</h4>
+                    <p>Software Engineer focusing on DevOps, AI, and Improved Developer Experiences</p>
+                  </div>
+                </div>
+                <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                    <h4>2022 - 2024</h4>
+                    <p>C++ Developer working on real-time application on the edge</p>
+                  </div>
+                </div>
+              </div>
+            </div> */}
           </section>
         )}
 
