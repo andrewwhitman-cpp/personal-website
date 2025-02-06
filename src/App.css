@@ -189,7 +189,10 @@ footer {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
   flex-direction: row-reverse;
+}
 }
 
 @media (max-width: 768px) {

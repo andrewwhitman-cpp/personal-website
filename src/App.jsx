@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { ThemeProvider, useTheme } from './ThemeContext'
+import { useEffect, useRef } from 'react'
 
 function ThemeToggle() {
   const { theme, toggleTheme } = useTheme()
@@ -13,6 +14,104 @@ function ThemeToggle() {
     <button onClick={toggleTheme} className="theme-toggle">
       {themeEmoji[theme]}
     </button>
+  )
+}
+
+function ParticleBackground() {
+  const canvasRef = useRef(null)
+  const particlesRef = useRef([])
+  const mouseRef = useRef({ x: 0, y: 0 })
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    const ctx = canvas.getContext('2d')
+    let animationFrameId
+
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
+    }
+
+    const createParticles = () => {
+      particlesRef.current = []
+      for (let i = 0; i < 50; i++) {
+        particlesRef.current.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          size: Math.random() * 2 + 1,
+          speedX: Math.random() * 2 - 1,
+          speedY: Math.random() * 2 - 1
+        })
+      }
+    }
+
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      const style = getComputedStyle(document.documentElement)
+      ctx.fillStyle = style.getPropertyValue('--particle-color').trim()
+      ctx.strokeStyle = style.getPropertyValue('--particle-line-color').trim()
+
+      particlesRef.current.forEach(particle => {
+        particle.x += particle.speedX
+        particle.y += particle.speedY
+
+        if (particle.x > canvas.width) particle.x = 0
+        if (particle.x < 0) particle.x = canvas.width
+        if (particle.y > canvas.height) particle.y = 0
+        if (particle.y < 0) particle.y = canvas.height
+
+        const dx = mouseRef.current.x - particle.x
+        const dy = mouseRef.current.y - particle.y
+        const distance = Math.sqrt(dx * dx + dy * dy)
+
+        if (distance < 100) {
+          ctx.beginPath()
+          ctx.moveTo(particle.x, particle.y)
+          ctx.lineTo(mouseRef.current.x, mouseRef.current.y)
+          ctx.stroke()
+        }
+
+        ctx.beginPath()
+        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
+        ctx.fill()
+      })
+
+      animationFrameId = requestAnimationFrame(animate)
+    }
+
+    const handleMouseMove = (event) => {
+      const rect = canvas.getBoundingClientRect()
+      mouseRef.current = {
+        x: event.clientX - rect.left,
+        y: event.clientY - rect.top
+      }
+    }
+
+    resizeCanvas()
+    createParticles()
+    animate()
+
+    window.addEventListener('resize', resizeCanvas)
+    window.addEventListener('mousemove', handleMouseMove)
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas)
+      window.removeEventListener('mousemove', handleMouseMove)
+      cancelAnimationFrame(animationFrameId)
+    }
+  }, [])
+
+  return (
+    <canvas
+      ref={canvasRef}
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        pointerEvents: 'none',
+        zIndex: -1
+      }}
+    />
   )
 }
 
@@ -36,6 +135,7 @@ function AppContent() {
       <main>
         {activeSection === 'home' && (
           <section className="home-section">
+            <ParticleBackground />
             <div className="home-content">
               <div className="profile-image">
                 <picture>
