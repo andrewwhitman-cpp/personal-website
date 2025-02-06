@@ -115,15 +115,13 @@ button:focus-visible {
 }
 
 .theme-toggle {
-  position: absolute;
-  right: 20px;
-  top: 10px;
   background: transparent;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
   transition: all 0.3s;
+  margin-left: 20px;
 }
 
 .theme-toggle:hover {
