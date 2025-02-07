@@ -208,7 +208,7 @@ function AppContent() {
             <h2>My Projects</h2>
             <div className="projects-grid">
               <div className="project-card">
-                <h3>Web Features</h3>
+                <h3>Web Animations</h3>
                 <p>A showcase of modern web development animations with downloadable code snippets.</p>
                 <a href="https://andrewwhitman-cpp.github.io/web-features/" target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
