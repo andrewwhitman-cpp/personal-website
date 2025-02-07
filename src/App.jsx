@@ -208,6 +208,11 @@ function AppContent() {
             <h2>My Projects</h2>
             <div className="projects-grid">
               <div className="project-card">
+                <h3>Web Features</h3>
+                <p>A showcase of modern web development animations with downloadable code snippets.</p>
+                <a href="https://andrewwhitman-cpp.github.io/web-features/" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+              <div className="project-card">
                 <h3>Bible Customizer</h3>
                 <p>An interactive web application that allows users to customize a 3D model of a Bible.</p>
                 <a href="https://andrewwhitman-cpp.github.io/bible-customization-app/" target="_blank" rel="noopener noreferrer">View Project</a>
