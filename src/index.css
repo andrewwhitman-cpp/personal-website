@@ -1,11 +1,15 @@
 :root[data-theme="light"] {
   color: #213547;
   background-color: #ffffff;
+  --particle-color: #3730a3;
+  --particle-line-color: rgba(55, 48, 163, 0.6);
 }
 
 :root[data-theme="dark"] {
   color: rgba(255, 255, 255, 0.95);
   background-color: #1a1a1a;
+  --particle-color: #60a5fa;
+  --particle-line-color: rgba(96, 165, 250, 0.7);
 }
 
 :root[data-theme="dark"] a {
@@ -115,20 +119,19 @@ button:focus-visible {
 }
 
 .theme-toggle {
-  position: absolute;
-  right: 20px;
-  top: 20px;
   background: transparent;
-  border: none;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 8px;
   border-radius: 50%;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  margin-left: 20px;
 }
 
 .theme-toggle:hover {
   background-color: rgba(100, 108, 255, 0.1);
+  border-color: #646cff;
+  box-shadow: 0 2px 8px rgba(100, 108, 255, 0.2);
 }
 
 :root[data-theme="light"] button {
@@ -136,7 +139,20 @@ button:focus-visible {
   color: #213547;
 }
 
+:root[data-theme="light"] .theme-toggle {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 2px solid #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 :root[data-theme="dark"] button {
   background-color: #1a1a1a;
   color: rgba(255, 255, 255, 0.87);
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  background-color: #1a1a1a;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 }
