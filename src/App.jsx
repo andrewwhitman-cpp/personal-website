@@ -208,6 +208,11 @@ function AppContent() {
             <h2>My Projects</h2>
             <div className="projects-grid">
               <div className="project-card">
+                <h3>Solar System Game</h3>
+                <p>An interactive solar system simulation game with educational elements.</p>
+                <a href="https://andrewwhitman-cpp.github.io/solar-system-game/" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+              <div className="project-card">
                 <h3>Web Animations</h3>
                 <p>A showcase of modern web development animations with downloadable code snippets.</p>
                 <a href="https://andrewwhitman-cpp.github.io/web-features/" target="_blank" rel="noopener noreferrer">View Project</a>
