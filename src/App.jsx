@@ -220,7 +220,7 @@ function AppContent() {
               <div className="project-card">
                 <h3>Bible Customizer</h3>
                 <p>An interactive web application that allows users to customize a 3D model of a Bible.</p>
-                <a href="https://andrewwhitman-cpp.github.io/bible-customization-app/" target="_blank" rel="noopener noreferrer">View Project</a>
+                <a href="https://andrewwhitman-cpp.github.io/bible-customizer/" target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
               <div className="project-card">
                 <h3>Coffee Creator</h3>
