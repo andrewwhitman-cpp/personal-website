@@ -222,11 +222,11 @@ function AppContent() {
                 <p>An interactive web application that allows users to customize a 3D model of a Bible.</p>
                 <a href="https://andrewwhitman-cpp.github.io/bible-customizer/" target="_blank" rel="noopener noreferrer">View Project</a>
               </div>
-              <div className="project-card">
+              {/* <div className="project-card">
                 <h3>Coffee Creator</h3>
                 <p>A modern, responsive website showcasing coffee order customization.</p>
                 <a href="https://andrewwhitman-cpp.github.io/coffee/" target="_blank" rel="noopener noreferrer">View Project</a>
-              </div>
+              </div> */}
               <div className="project-card">
                 <h3>More Coming Soon</h3>
                 <p>Stay tuned for additional projects showcasing my development skills and creativity.</p>
